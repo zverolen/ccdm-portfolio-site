@@ -1,0 +1,23 @@
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+
+  background-color: $darkGrey;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  width: calcPercent(80, 304);
+}
+
+.header-link {
+  width: calcPercent(36, 304);
+  img {
+    width: 100%;
+  }
+}

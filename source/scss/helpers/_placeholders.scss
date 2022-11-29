@@ -1,0 +1,29 @@
+@import 'functions';
+
+%siteFrame {
+  width: 90%;
+  max-width: 1352px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%siteFrameViaPadding {
+  padding-left: calcRem(18);
+  padding-right: calcRem(18);
+}
+
+%imageContainer {
+  overflow: hidden;
+}
+
+%image {
+  max-width: 100%;
+  height: auto;
+}
+
+%centerVertically {
+  top: 50%;
+
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

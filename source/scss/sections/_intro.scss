@@ -1,0 +1,84 @@
+.intro {
+  position: relative;
+  color: $white;
+}
+
+.intro-description {
+  @extend %siteFrameViaPadding;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  padding-top: calcRem(50);
+}
+
+.intro-portraitContainer {
+  @extend %imageContainer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-portrait {
+  @extend %image;
+  display: block;
+}
+
+.intro-button {
+  position: relative;
+
+  display: block;
+
+  width: calcEm(138, 14);
+  height: calcEm(40, 14);
+  margin-top: calcRem(20);
+
+  font-size: calcRem(14);
+  fill: $white;
+
+  &:before {
+    @extend %centerVertically;
+    content: 'Email Me';
+
+    position: absolute;
+    left: 0;
+  
+    width: 100%;
+
+    text-transform: uppercase;
+    text-align: center;
+    color: $black;
+  }
+}
+
+.intro-socialLinks {
+  @extend %siteFrameViaPadding;
+  position: absolute;
+  bottom: calcRem(16);
+  left: 0;
+
+  height: calcRem(48);
+
+  a {
+    display: inline-block;
+
+    box-sizing: border-box;
+    width: calcRem(48);
+    height: calcRem(48);
+    padding: calcRem(10);
+    margin-left: calcRem(6);
+    margin-right: calcRem(6);
+  
+    text-decoration: none;
+  
+    &:first-child {
+      width: calcRem(38);
+      padding-left: 0;
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

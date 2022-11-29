@@ -1,0 +1,11 @@
+@function calcPercent($elementWidth, $containerWidth) {
+  @return  calc($elementWidth * 100% / $containerWidth);
+}
+
+@function calcRem($size) {
+  @return  calc($size / 16 * 1rem);
+}
+
+@function calcEm($size, $fontSize) {
+  @return  calc($size / $fontSize * 1em);
+}

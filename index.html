@@ -6,21 +6,19 @@
 		<link rel="stylesheet" href="./public/css/styles.css">
 	</head>
 	<body>
-		<header>
+		<header class="header">
 			<div class="header-container">
-				<p>Elena Zvereva</p>
-				<a href="mailto:zverolen@gmail.com">Email Image</a>
+				<img class="header-logo" src="./source/images/logo.svg" alt="Elena Zvereva - web developer">
+				<a class="header-link" href="mailto:zverolen@gmail.com">
+					<img src="./source/images/email-icon.svg" alt="">
+				</a>
 			</div>
 		</header>
+
 		<main>
 			<section class="intro">
 				<div class="intro-portraitContainer">
-					<img class="intro-portrait" src="./source/images/portrait.jpg" alt="Photo of Elena Zvereva">
-				</div>
-				<div class="intro-socialLinks">
-					<a href="#">Link to Linkedin</a>
-					<a href="#">Link to Github</a>
-					<a href="#">Link to Instagram</a>
+					<img class="intro-portrait" src="./source/images/mobile-portrait.jpg" alt="My portait">
 				</div>
 				<div class="intro-description">
 					<h1>
@@ -32,22 +30,37 @@
 					<p>I primarily work with CSS and HTML with Vanilla Javascript to provide user intercations.</p>
 					<p>I'm also familiar with UX/UI design considering it to be a hobby.</p>
 					<p>My work is best described with the projects listed below. Take a look!</p>
-					<a href="mailto:email@email.com">Email Me!</a>
+					<a class="intro-button" href="mailto:email@email.com" aria-label="Contact me via Email">
+						<svg viewBox="0 0 138 40">
+							<path d="M4.6 4L9.2 0H128.779L133.379 4L138 8V32.0039L133.404 36.0039L128.8 40H9.2L4.57998 36.0026L0 32V8.14014L4.6 4Z"/>
+						</svg>
+					</a>
+				</div>
+				<div class="intro-socialLinks">
+					<a class="intro-socialLink" href="#">
+						<img src="./source/images/linkedin-logo.svg" alt="Link to Linked in">
+					</a>
+					<a class="intro-socialLink" href="#">
+						<img src="./source/images/behance-logo.svg" alt="Link to Behance">
+					</a>
+					<a class="intro-socialLink" href="#">
+						<img src="./source/images/instagram-icon.svg" alt="Link to Instagram">
+					</a>
 				</div>
 			</section>
 			<section class="skills">
-				<ul>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>Javascript</li>
-					<li>Git</li>
-					<li>Responsive Images</li>
-					<li>Accessibility</li>
-					<li>Testing</li>
-					<li>Figma</li>
-					<li>UX/UI</li>
-					<li>Photoshop</li>
-				</ul>
+				<div>
+					<p>HTML</p>
+					<p>CSS</p>
+					<p>Javascript</p>
+					<p>Git</p>
+					<p>Responsive Images</p>
+					<p>Accessibility</p>
+					<p>Testing</p>
+					<p>Figma</p>
+					<p>UX/UI</p>
+					<p>Photoshop</p>
+				</div>
 			</section>
 			<section class="projects">
 				<!-- Project Start -->

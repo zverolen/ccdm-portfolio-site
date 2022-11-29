@@ -1,3 +1,23 @@
+.intro-socialLinks, .intro-description {
+  padding-left: 1.125rem;
+  padding-right: 1.125rem;
+}
+
+.intro-portraitContainer {
+  overflow: hidden;
+}
+
+.intro-portrait {
+  max-width: 100%;
+  height: auto;
+}
+
+.intro-button:before {
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 html {
   font-size: 16px;
 }
@@ -19,47 +39,96 @@ li {
   list-style: none;
 }
 
-header {
-  padding: 20px 0;
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  background-color: #424242;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
-  width: 90%;
-  max-width: 1352px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.header-logo {
+  width: 26.3157894737%;
+}
+
+.header-link {
+  width: 11.8421052632%;
+}
+.header-link img {
+  width: 100%;
 }
 
 .intro {
-  /* width: 95%; */
-  width: 90%;
-  max-width: 1352px;
-  padding: 10px 0;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  color: #FAFAFA;
+}
+
+.intro-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 3.125rem;
 }
 
 .intro-portraitContainer {
-  width: 100px;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
 }
 
 .intro-portrait {
   display: block;
-  max-width: 100%;
-  height: auto;
+}
+
+.intro-button {
+  position: relative;
+  display: block;
+  width: 9.8571428571em;
+  height: 2.8571428571em;
+  margin-top: 1.25rem;
+  font-size: 0.875rem;
+  fill: #FAFAFA;
+}
+.intro-button:before {
+  content: "Email Me";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #212121;
+}
+
+.intro-socialLinks {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  height: 3rem;
+}
+.intro-socialLinks a {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.625rem;
+  margin-left: 0.375rem;
+  margin-right: 0.375rem;
+  text-decoration: none;
+}
+.intro-socialLinks a:first-child {
+  width: 2.375rem;
+  padding-left: 0;
+  margin-left: 0;
+}
+.intro-socialLinks a:last-child {
+  margin-right: 0;
 }
 
 .skills {
-  width: 90%;
-  max-width: 1352px;
-  padding: 10px 0;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #E0E0E0;
 }
 
 .projects {
