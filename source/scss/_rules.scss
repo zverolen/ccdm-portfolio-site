@@ -1,0 +1,78 @@
+//Variables
+
+$color-primary-light: #FAFAFA;
+$color-primary-dark: #424242;
+$color-secondary-dark: #616161;
+$color-secondary-medium: #E0E0E0;
+$color-lightest: #FFFFFF;
+$color-darkest: #212121;
+$color-red: #D3715C;
+$color-blue: #639CA8;
+$color-purple: #462255;
+
+$font-primary: 'Poppins', sans-serif;
+$font-secondary: 'Forum', cursive;
+$font-weight-primary: 400;
+$font-weight-headings: 500;
+$font-weight-links: 600;
+
+$base-font-size: 16px;
+
+%headings-lvl-1-2 {
+  display: block;
+
+  width: 100%;
+  margin: 0;
+
+  font-family: $font-secondary;
+}
+
+%headings-lvl-3-4 {
+  margin: 0;
+  font-weight: $font-weight-headings;
+}
+
+p {
+  font-size: $base-font-size * 2;
+}
+
+%heading-lvl-1 {
+  @extend %headings-lvl-1-2;
+
+  font-size: $base-font-size * 6;
+}
+
+%heading-lvl-2 {
+  @extend %headings-lvl-1-2;
+  font-size: $base-font-size * 4;
+}
+
+%heading-lvl-3 {
+  @extend %headings-lvl-3-4;
+  font-size: $base-font-size * 3;
+}
+
+%heading-lvl-4 {
+  @extend %headings-lvl-3-4;
+  font-size: $base-font-size * 2.25;
+}
+
+%link {
+  display: block;
+  font-size: $base-font-size * 2;
+  font-weight: $font-weight-links;
+  color: $color-secondary-dark;
+}
+
+%button {
+  font-size: $base-font-size * 1.5;
+  color: $color-primary-dark;
+  text-decoration: underline;
+
+  border: none;
+}
+
+%about-text {
+  font-size: $base-font-size * 2;
+  color: $color-primary-light;
+}

@@ -1,0 +1,166 @@
+@import 'rules';
+
+//Helpers
+.visually-hidden {
+  position: absolute;
+  left:     -10000px;
+  top:      auto;
+  width:    1px;
+  height:   1px;
+  overflow: hidden;
+}
+
+//Global
+body {
+  margin: 0;
+
+  font-family: $font-primary;
+  color: $color-primary-dark;
+  line-height: 1.5;
+
+  background-color: $color-primary-light;
+}
+
+p {
+  margin: 0;
+}
+
+//Components
+
+.header {
+  margin-bottom: 64px;
+}
+
+.header-content {
+  margin: 0;
+}
+
+.header-zoneRed {
+  @extend %heading-lvl-1;
+
+  padding: 32px;
+
+  color: $color-lightest;
+
+  background-color: $color-red;
+}
+
+.header-zoneWhite {
+  @extend %heading-lvl-2;
+
+  padding: 32px;
+}
+
+.header-zoneBlue {
+  @extend %heading-lvl-2;
+
+  padding: 32px;
+
+  color: $color-lightest;
+
+  background-color: $color-blue;
+}
+
+.skills {
+  margin-bottom: 64px;
+  padding: 32px;
+
+  background-color: $color-secondary-medium;
+}
+
+.skills-heading {
+  @extend %heading-lvl-3;
+
+  padding: 32px;
+
+  text-align: center;
+}
+
+.skill-primary {
+  display: inline;
+
+  font-size: calc(32px * 1.75);
+  text-transform: uppercase;
+}
+
+.skill-secondary {
+  display: inline;
+
+  font-size: calc(32px * 1.125);
+}
+
+.projects-section {
+  padding: 32px;
+}
+
+.projects-heading {
+  @extend %heading-lvl-2;
+
+  margin-bottom: 16px;
+
+  color: $color-lightest;
+
+  background-color: $color-purple;
+}
+
+.projects-container {
+  padding: 0;
+}
+
+.project {
+  padding: 8px;
+  margin-bottom: 16px;
+
+  list-style: none;
+  border: 2px solid $color-darkest;
+}
+
+.project-heading {
+  @extend %heading-lvl-3;
+}
+
+.project-features-heading {
+  @extend %heading-lvl-4;
+}
+
+.projects-link {
+  @extend %link;
+}
+
+.projects-button {
+  @extend %button;
+
+  background-color: transparent;
+}
+
+.about {
+  box-sizing: border-box;
+  padding: 16px;
+  background-color: $color-primary-dark;
+}
+
+.about-text {
+  @extend %about-text;
+}
+
+.temp-image {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient($color-blue, $color-red);
+}
+
+.temp-portrait {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  background: linear-gradient($color-blue, $color-red);
+}
+
+.footer {
+  height: 200px;
+  width: 100%;
+  background-color: $color-darkest;
+}

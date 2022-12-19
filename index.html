@@ -2,106 +2,108 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Elena Zvereva - Portfolio</title>
+        <title>Elena Zvereva</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Forum&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./source/css/style.css">
+        <link rel="stylesheet" href="./public/css/style.css">
     </head>
     <body>
-        <header>
-            <img width="40px" class="header-logo" src="./images/logo.svg" alt="Elena Zvereva, site logo">
-            <a class="header-link" href="mailto:zverolen@gmail.com">
-                <img src="./images/email-icon.svg" alt="">
-            </a>
+        <header class="header">
+            <h1 class="visually-hidden">My Portfolio: Selected Projects</h1>
+            <p class="header-content">
+                <span class="header-zoneRed">Elena Zvereva</span>
+                <span class="header-zoneWhite">Front-End</span>
+                <span class="header-zoneBlue">Web Developer</span>
+            </p>
         </header>
+        <main>   
+            <section class="skills">
+                <h2 class="skills-heading">Skills and approach</h2>
+                <div>
+                    <p class="skill-primary">HTML, </p>
+                    <p class="skill-primary">CSS, </p>
+                    <p class="skill-primary">Javascript, </p>
+                    <p class="skill-primary">Git, </p>
+                    <p class="skill-primary">Responsive Images, </p>
+                    <p class="skill-primary">Accessibility, </p>
+                    <p class="skill-primary">Testing</p>
+                </div>
+                <div>
+                    <p class="skill-secondary">Figma, </p>
+                    <p class="skill-secondary">UX/UI, </p>
+                    <p class="skill-secondary">Photoshop</p>
+                </div>
+            </section>
+            <section class="projects-section">
+                <h2 class="projects-heading">Projects</h2>
+                <p>NOTE: all websites are screen readers friendly, mobile-ready, use responsive images and are tested agains different accessibility concerns.</p>
+                <ul class="projects-container">
+                    <li class="project">
+                        <h3 class="project-heading">My Portfolio Website</h3>
+                        <h4 class="visually-hidden">Project Description</h4>
+                        <div class="temp-image"></div>
+                        <p>A website for a non-alcoholic beer brewery. Another task from Codecademy. The task was to build a website for a business
+                            of some kind using Flexbox.</p>
+                        <h4 class="project-features-heading">Features</h4>
+                            <p>HTML, SASS and JS</p>
+                            <p>Mobile ready</p>
+                            <p>Responsive images</p>
+                            <p>Screen Readers-friendly</p>
+                            <p>Designed in Figma</p>
+                            <p>Imagery made in Inkscape, Photoshop and Figma. Photo reference included.</p>
+                            <p>Colors checked for their contrast ratio</p>
+                        <a class="projects-link" href="">View the site in a browser</a>
+                        <a class="projects-link" href="">Link to the Portfolio site on Github</a>
+                        <button class="projects-button">Close</button>
+                    </li>
+                    <li class="project">
+                        <h3 class="project-heading">My Portfolio Website</h3>
+                        <h4 class="visually-hidden">Project Description</h4>
+                        <div class="temp-image"></div>
+                        <p>A website for a non-alcoholic beer brewery. Another task from Codecademy. The task was to build a website for a business
+                            of some kind using Flexbox.</p>
+                        <h4 class="project-features-heading">Features</h4>
+                            <p>HTML, SASS and JS</p>
+                            <p>Mobile ready</p>
+                            <p>Responsive images</p>
+                            <p>Screen Readers-friendly</p>
+                            <p>Designed in Figma</p>
+                            <p>Imagery made in Inkscape, Photoshop and Figma. Photo reference included.</p>
+                            <p>Colors checked for their contrast ratio</p>
+                        <a class="projects-link" href="">View the site in a browser</a>
+                        <a class="projects-link" href="">Link to the Portfolio site on Github</a>
+                        <button class="projects-button">Close</button>
+                    </li>
+                    <li class="project">
+                        <h3 class="project-heading">My Portfolio Website</h3>
+                        <h4 class="visually-hidden">Project Description</h4>
+                        <div class="temp-image"></div>
+                        <p>A website for a non-alcoholic beer brewery. Another task from Codecademy. The task was to build a website for a business
+                            of some kind using Flexbox.</p>
+                        <h4 class="project-features-heading">Features</h4>
+                            <p>HTML, SASS and JS</p>
+                            <p>Mobile ready</p>
+                            <p>Responsive images</p>
+                            <p>Screen Readers-friendly</p>
+                            <p>Designed in Figma</p>
+                            <p>Imagery made in Inkscape, Photoshop and Figma. Photo reference included.</p>
+                            <p>Colors checked for their contrast ratio</p>
+                        <a class="projects-link" href="">View the site in a browser</a>
+                        <a class="projects-link" href="">Link to the Portfolio site on Github</a>
+                        <button class="projects-button">Close</button>
+                    </li>
+                </ul>
+            </section>
+            <section class="about">
+                <h2 class="visually-hidden">About me</h2>
+                <div class="temp-portrait"></div>
+                <p class="about-text">Hello! I'm a self-taught frontend web developer based in Barcelona, Spain. I primarily work with CSS and HTML with Vanilla Javascript to provide user interactions. I'm also familiar with UX/UI design and consider it to be my hobby.</p>
+                <p class="about-text">My work is best described with the projects listed below. Take a look!</p>
+            </section>
+        </main>
+        <footer class="footer">
+        </footer>
     </body>
-    <main>
-        <h1>Elena Zvereva Portfolio: Selected Projects</h1>
-        <section>
-            <h2>About me</h2>
-            <p>Hello! I'm a self-taught frontend web developer based in Barcelona, Spain.</p>
-            <p>I primarily work with CSS and HTML with Vanilla Javascript to provide user interactions.</p>
-            <p>I'm also familiar with UX/UI design and consider it to be my hobby.</p>
-            <p>My work is best described with the projects listed below. Take a look!</p>
-        </section>
-        <section>
-            <h2>Skills and Tools</h2>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>Javascript</p>
-            <p>Git</p>
-            <p>Responsive Images</p>
-            <p>Accessibility</p>
-            <p>Testing</p>
-            <p>Figma</p>
-            <p>UX/UI</p>
-            <p>Photoshop</p>
-        </section>
-        <section>
-            <h2>Selected Projects</h2>
-            <ul>
-                <li>
-                    <h3>My Portfolio Website</h3>
-                    <h4>Project Description</h4>
-                    <p>A place to showcast my projects</p>
-                    <h5>Features</h5>
-                        <p>HTML, SASS and JS</p>
-                        <p>Mobile ready</p>
-                        <p>Responsive images</p>
-                        <p>Screen Readers-friendly</p>
-                        <p>Designed in Figma</p>
-                        <p>Imagery made in Inkscape, Photoshop and Figma. Photo reference included.</p>
-                        <p>Colors checked for their contrast ratio</p>
-                    <a href="">Link to the Portfolio site on Github</a>
-                </li>
-                <li>
-                    <h3>Local Vampire Club</h3>
-                    <h4>Project Description</h4>
-                    <p>Night Flight is a local club for vampires from Sydney. They gather, turn to bats and fly over city together.</p>
-                    <p>This was a task from a Codecademy course. The goal was to create a responsive web site for any local club.</p>
-                    <h5>Features</h5>
-                    <p>HTML, CSS and JS for a form sign-up simulation</p>
-                    <p>Mobile ready</p>
-                    <p>Responsive images</p>
-                    <p>Screen Readers-friendly</p>
-                    <p>Designed in Browser</p>
-                    <p>Imagery made in Inkscape, Photoshop and Figma. Photo reference included.</p>
-                    <p>Colors checked for their contrast ratio</p>
-                    <a href="">Link to Night Flight on Github</a>
-                </li>
-                <li>
-                    <h3>Non-alco Craft Brewery</h3>
-                    <h4>Project Description</h4>
-                    <p>O2 is a craft beer company that mastered brewing beers with no alcohol in them.</p>
-                    <p>This was another task from a Codecademy course. The goal was to create a company web site which is responsive and uses Flexbox.</p>
-                    <h5>Features</h5>
-                    <p>HTML and CSS</p>
-                    <p>Mobile ready</p>
-                    <p>Responsive images</p>
-                    <p>Screen Readers-friendly</p>
-                    <p>Designed in Browser</p>
-                    <p>Imagery made in Figma. Photo reference included.</p>
-                    <p>Colors checked for their contrast ratio</p>
-                    <a href="">Link to O2 on Github</a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Contacts</h2>
-            <p>You can write me on <a href="">Telegram</a>, <a href="">email</a> or social media.</p>
-            <h3>Contact Links</h3>
-            <ul>
-                <li style="list-style: none;"><a href="">LinkedIn</a></li>
-                <li style="list-style: none;"><a href="">Github</a></li>
-                <li style="list-style: none;"><a href="">Behance</a></li>
-                <li style="list-style: none;"><a href="">Telegram</a></li>
-                <li style="list-style: none;"><a href="">Email</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>Have a nice day!</p>
-    </footer>
 </html>
