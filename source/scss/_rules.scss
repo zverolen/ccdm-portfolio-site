@@ -12,11 +12,22 @@ $color-purple: #462255;
 
 $font-primary: 'Poppins', sans-serif;
 $font-secondary: 'Forum', cursive;
+
 $font-weight-primary: 400;
 $font-weight-headings: 500;
 $font-weight-links: 600;
 
-$base-font-size: 16px;
+$paragraph-letter-spacing: 0.05rem;
+
+$base-font-size: 16;
+$heading-lvl-1-font-size: clamp(calc(32 / $base-font-size) * 1rem, 10vw, calc(90 / $base-font-size) * 1rem);
+$heading-lvl-2-font-size: clamp(calc(24 / $base-font-size) * 1rem, 7.1vw, calc(64 / $base-font-size) * 1rem);
+$heading-lvl-3-font-size: clamp(1rem, 5vw, calc(45 / $base-font-size) * 1rem);
+$heading-lvl-4-font-size: clamp(1rem, 3.6vw, calc(32 / $base-font-size) * 1rem);
+$text-primary-font-size: clamp(1rem, 2.6vw, calc(24 / $base-font-size) * 1rem);
+$skill-main-font-size: clamp(calc(18 / $base-font-size) * 1rem, 3.6vw, calc(32 / $base-font-size) * 1rem);
+$skill-secondary-font-size: clamp(calc(14 / $base-font-size) * 1rem, 3.1vw, calc(28 / $base-font-size) * 1rem);
+$button-font-size: clamp(1rem, 3.1vw, calc(28 / $base-font-size) * 1rem);
 
 %headings-lvl-1-2 {
   display: block;
@@ -25,6 +36,7 @@ $base-font-size: 16px;
   margin: 0;
 
   font-family: $font-secondary;
+  font-weight: $font-weight-primary;
 }
 
 %headings-lvl-3-4 {
@@ -33,46 +45,60 @@ $base-font-size: 16px;
 }
 
 p {
-  font-size: $base-font-size * 2;
+  font-size: $text-primary-font-size;
+  font-weight: 300;
 }
 
 %heading-lvl-1 {
   @extend %headings-lvl-1-2;
 
-  font-size: $base-font-size * 6;
+  font-size: $heading-lvl-1-font-size;
 }
 
 %heading-lvl-2 {
   @extend %headings-lvl-1-2;
-  font-size: $base-font-size * 4;
+  font-size: $heading-lvl-2-font-size;
 }
 
 %heading-lvl-3 {
   @extend %headings-lvl-3-4;
-  font-size: $base-font-size * 3;
+  font-size: $heading-lvl-3-font-size;
 }
 
 %heading-lvl-4 {
   @extend %headings-lvl-3-4;
-  font-size: $base-font-size * 2.25;
+  font-size: $heading-lvl-4-font-size;
+}
+
+%skill-main {
+  font-size: $skill-main-font-size;
+}
+
+%skill-secondary {
+  font-size: $skill-secondary-font-size;
+}
+
+%paragraph {
+  letter-spacing: $paragraph-letter-spacing;
 }
 
 %link {
   display: block;
-  font-size: $base-font-size * 2;
+  font-size: $text-primary-font-size;
   font-weight: $font-weight-links;
   color: $color-secondary-dark;
+  letter-spacing: $paragraph-letter-spacing;
 }
 
 %button {
-  font-size: $base-font-size * 1.5;
+  font-size: $button-font-size;
   color: $color-primary-dark;
   text-decoration: underline;
+  font-weight: 300;
 
   border: none;
 }
 
 %about-text {
-  font-size: $base-font-size * 2;
   color: $color-primary-light;
 }

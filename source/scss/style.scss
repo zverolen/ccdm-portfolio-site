@@ -77,16 +77,22 @@ p {
 }
 
 .skill-primary {
+  @extend %skill-main;
   display: inline;
 
-  font-size: calc(32px * 1.75);
   text-transform: uppercase;
+  font-weight: 300;
 }
 
 .skill-secondary {
-  display: inline;
+  @extend %skill-secondary;
 
-  font-size: calc(32px * 1.125);
+  font-weight: 300;
+  display: inline;
+}
+
+.projects-section p {
+  @extend %paragraph;
 }
 
 .projects-section {
