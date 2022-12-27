@@ -1,0 +1,76 @@
+.projects-section p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: $paragraph-font-size;
+  font-weight: $font-weight-primary;
+}
+
+.projects-heading-container {
+  position: relative;
+
+  font-size: $heading-lvl-2-font-size;
+
+  background-color: $color-purple;
+
+  &::after {
+    content: '';
+    
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+
+    width: calc(732 / 64 * 1em);
+    height: calc(112 / 64 * 1em);
+  
+    border-width: $border-big;
+    border-left-width: 0;
+    border-style: solid;
+    border-color: $color-darkest;
+  }
+}
+
+.projects-heading-content {
+  width: $width-siteFrame;
+  margin: 0 auto;
+
+  font-size: inherit;
+  font-family: $font-secondary;
+  font-weight: $font-weight-primary;
+  color: $color-lightest;
+}
+
+.projects-note {
+  width: $width-siteFrame;
+  margin: 0 auto;
+}
+
+.projects-container {
+  width: $width-siteFrame;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.projects-item {
+
+  list-style: none;
+  border: $border-big solid $color-darkest;
+}
+
+.project-heading {
+  @extend %heading-lvl-3;
+}
+
+.project-features-heading {
+  @extend %heading-lvl-4;
+}
+
+.projects-link {
+  @extend %link;
+}
+
+.projects-button {
+  @extend %button;
+
+  background-color: transparent;
+}

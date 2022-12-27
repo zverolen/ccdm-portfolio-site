@@ -1,0 +1,19 @@
+.footer {
+  width: 100%;
+  background-color: $color-darkest;
+}
+
+.footer-icons {
+  width: $width-siteFrame;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-icons-container {
+  display: flex;
+}
+
+.footer-icons-github {
+  width: 6.4vw;
+  height: 6.4vw;
+}

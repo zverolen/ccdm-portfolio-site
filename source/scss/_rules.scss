@@ -1,105 +1,24 @@
+
 //Variables
 
-$color-primary-light: #FAFAFA;
-$color-primary-dark: #424242;
-$color-secondary-dark: #616161;
-$color-secondary-medium: #E0E0E0;
-$color-lightest: #FFFFFF;
-$color-darkest: #212121;
-$color-red: #D3715C;
-$color-blue: #639CA8;
-$color-purple: #462255;
+$width-redStripe: 93.75vw;
+$width-blueStripe: 86vw;
+$site-frame-margin: min(1.7vw, calc(32 / 16) * 1em);
+$site-frame-margin: 7vw;
+$width-siteFrame: min(80vw, 80rem);
 
-$font-primary: 'Poppins', sans-serif;
-$font-secondary: 'Forum', cursive;
+$border-small: 1px;
+$border-big: 2px;
 
-$font-weight-primary: 300;
-$font-weight-headings-lvl-1-2: 400;
-$font-weight-headings-lvl-3-4: 400;
-$font-weight-links: 600;
-
-$paragraph-letter-spacing: 0.05rem;
-
-$base-font-size: 16;
-$heading-lvl-1-font-size: clamp(calc(32 / $base-font-size) * 1rem, 10vw, calc(90 / $base-font-size) * 1rem);
-$heading-lvl-2-font-size: clamp(calc(24 / $base-font-size) * 1rem, 7.1vw, calc(64 / $base-font-size) * 1rem);
-$heading-lvl-3-font-size: clamp(1rem, 5.1vw, calc(46 / $base-font-size) * 1rem);
-$heading-lvl-4-font-size: clamp(1rem, 3.6vw, calc(32 / $base-font-size) * 1rem);
-$text-primary-font-size: clamp(1rem, 2.6vw, calc(24 / $base-font-size) * 1rem);
-$skill-main-font-size: clamp(calc(18 / $base-font-size) * 1rem, 3.6vw, calc(32 / $base-font-size) * 1rem);
-$skill-secondary-font-size: clamp(calc(16 / $base-font-size) * 1rem, 3.1vw, calc(28 / $base-font-size) * 1rem);
-$button-font-size: clamp(1rem, 3.1vw, calc(28 / $base-font-size) * 1rem);
-
-%headings-lvl-1-2 {
-  display: block;
-
-  width: 100%;
-  margin: 0;
-
-  font-family: $font-secondary;
-  font-weight: $font-weight-primary;
+%site-frame {
+  width: $width-siteFrame;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-%headings-lvl-3-4 {
-  margin: 0;
-  font-weight: $font-weight-headings;
-}
-
-p {
-  font-size: $text-primary-font-size;
-  font-weight: 300;
-}
-
-%heading-lvl-1 {
-  @extend %headings-lvl-1-2;
-
-  font-size: $heading-lvl-1-font-size;
-}
-
-%heading-lvl-2 {
-  @extend %headings-lvl-1-2;
-  font-size: $heading-lvl-2-font-size;
-}
-
-%heading-lvl-3 {
-  @extend %headings-lvl-3-4;
-  font-size: $heading-lvl-3-font-size;
-}
-
-%heading-lvl-4 {
-  @extend %headings-lvl-3-4;
-  font-size: $heading-lvl-4-font-size;
-}
-
-%skill-main {
-  font-size: $skill-main-font-size;
-}
-
-%skill-secondary {
-  font-size: $skill-secondary-font-size;
-}
-
-%paragraph {
-  letter-spacing: $paragraph-letter-spacing;
-}
-
-%link {
-  display: block;
-  font-size: $text-primary-font-size;
-  font-weight: $font-weight-links;
-  color: $color-secondary-dark;
-  letter-spacing: $paragraph-letter-spacing;
-}
-
-%button {
-  font-size: $button-font-size;
-  color: $color-primary-dark;
-  text-decoration: underline;
-  font-weight: 300;
-
-  border: none;
-}
-
-%about-text {
-  color: $color-primary-light;
+%intro-decoration-border {
+  border-width: $border-big;
+  border-right-width: 0;
+  border-color: $color-darkest;
+  border-style: solid;
 }

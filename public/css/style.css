@@ -1,31 +1,17 @@
-.projects-heading, .header-zoneBlue, .header-zoneWhite, .header-zoneRed {
-  display: block;
-  width: 100%;
-  margin: 0;
-  font-family: "Forum", cursive;
-  font-weight: 400;
+.intro-heading-lineTwo::after {
+  border-width: 2px;
+  border-right-width: 0;
+  border-color: #212121;
+  border-style: solid;
 }
 
-.project-features-heading, .project-heading, .skills-heading {
+.project-features-heading, .project-heading {
   margin: 0;
   font-weight: 500;
 }
 
-p {
-  font-size: clamp(1rem, 2.6vw, 1.5rem);
-  font-weight: 300;
-}
-
-.header-zoneRed {
-  font-size: clamp(2rem, 10vw, 5.625rem);
-}
-
-.projects-heading, .header-zoneBlue, .header-zoneWhite {
-  font-size: clamp(1.5rem, 7.1vw, 4rem);
-}
-
-.project-heading, .skills-heading {
-  font-size: clamp(1rem, 5vw, 2.8125rem);
+.project-heading {
+  font-size: clamp(1rem, 5.1vw, 2.875rem);
 }
 
 .project-features-heading {
@@ -37,11 +23,7 @@ p {
 }
 
 .skill-secondary {
-  font-size: clamp(0.875rem, 3.1vw, 1.75rem);
-}
-
-.projects-section p {
-  letter-spacing: 0.05rem;
+  font-size: clamp(1rem, 3.1vw, 1.75rem);
 }
 
 .projects-link {
@@ -60,8 +42,256 @@ p {
   border: none;
 }
 
-.about-text {
+.intro {
+  width: 100%;
+  overflow: hidden;
+}
+
+.intro-lineOne {
+  position: relative;
+  font-size: clamp(2rem, 10vw, 5.625rem);
+}
+.intro-lineOne::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 93.75vw;
+  height: 100%;
+  margin-right: auto;
+  background-color: #D3715C;
+}
+
+.intro-lineTwo {
+  font-size: clamp(1.5rem, 7.1vw, 4rem);
+}
+
+.intro-lineThree {
+  position: relative;
+  font-size: clamp(1.5rem, 7.1vw, 4rem);
+}
+.intro-lineThree::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 14vw;
+  z-index: -1;
+  width: 86vw;
+  height: 100%;
+  margin-left: auto;
+  background-color: #639CA8;
+}
+
+.intro-heading-lineOne {
+  width: min(80vw, 80rem);
+  margin: 0 auto;
+  padding-top: 1.4444444444em;
+  font-family: "Forum", cursive;
+  color: #FFFFFF;
+}
+
+.intro-heading-lineTwo {
+  position: relative;
+  width: min(80vw, 80rem);
+  margin: 0 auto;
+  font-family: "Forum", cursive;
+  color: #424242;
+}
+.intro-heading-lineTwo::after {
+  content: "";
+  position: absolute;
+  left: -0.21875em;
+  top: -0.15625em;
+  display: block;
+  width: 200%;
+  height: 2.65625em;
+}
+
+.intro-heading-lineThree {
+  padding-bottom: 1.09375em;
+  padding-left: 0.125em;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 14vw;
+  font-family: "Forum", cursive;
+  color: #FFFFFF;
+}
+
+.intro-icons {
+  width: min(80vw, 80rem);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -0.75rem;
+}
+
+.intro-icons-container {
+  display: flex;
+}
+
+.intro-icons-github {
+  width: 6.4vw;
+  height: 6.4vw;
+}
+
+.skills {
+  position: relative;
+  background-color: #E0E0E0;
+}
+
+.skills-container {
+  width: min(80vw, 80rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills-heading-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 12.1739130435em;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: clamp(1rem, 5.1vw, 2.875rem);
+}
+.skills-heading-container::after {
+  content: "";
+  position: absolute;
+  height: 2.1304347826em;
+  width: 100%;
+  border: 2px #212121 solid;
+}
+
+.skills-heading-content {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 500;
+  text-align: center;
+}
+
+.skill-primary {
+  display: inline;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.skill-secondary {
+  font-weight: 300;
+  display: inline;
+}
+
+.projects-section p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: clamp(1rem, 2.6vw, 1.5rem);
+  font-weight: 300;
+}
+
+.projects-heading-container {
+  position: relative;
+  font-size: clamp(1.5rem, 7.1vw, 4rem);
+  background-color: #462255;
+}
+.projects-heading-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+  width: 11.4375em;
+  height: 1.75em;
+  border-width: 2px;
+  border-left-width: 0;
+  border-style: solid;
+  border-color: #212121;
+}
+
+.projects-heading-content {
+  width: min(80vw, 80rem);
+  margin: 0 auto;
+  font-size: inherit;
+  font-family: "Forum", cursive;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+.projects-note {
+  width: min(80vw, 80rem);
+  margin: 0 auto;
+}
+
+.projects-container {
+  width: min(80vw, 80rem);
+  padding: 0;
+  margin: 0 auto;
+}
+
+.projects-item {
+  list-style: none;
+  border: 2px solid #212121;
+}
+
+.projects-button {
+  background-color: transparent;
+}
+
+.about p {
+  margin: 0;
+  font-size: clamp(1rem, 2.6vw, 1.5rem);
+  font-weight: 300;
   color: #FAFAFA;
+}
+
+.about {
+  background-color: #424242;
+}
+
+.about-container {
+  width: min(80vw, 80rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-subheading {
+  margin: 0;
+  font-size: clamp(1rem, 3.6vw, 2rem);
+  font-weight: 500;
+  color: #FAFAFA;
+}
+
+.about-icons {
+  width: min(80vw, 80rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-icons-container {
+  display: flex;
+}
+
+.about-icons-github {
+  width: 6.4vw;
+  height: 6.4vw;
+}
+
+.footer {
+  width: 100%;
+  background-color: #212121;
+}
+
+.footer-icons {
+  width: min(80vw, 80rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-icons-container {
+  display: flex;
+}
+
+.footer-icons-github {
+  width: 6.4vw;
+  height: 6.4vw;
 }
 
 .visually-hidden {
@@ -77,89 +307,7 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   color: #424242;
-  line-height: 1.5;
   background-color: #FAFAFA;
-}
-
-p {
-  margin: 0;
-}
-
-.header {
-  margin-bottom: 64px;
-}
-
-.header-content {
-  margin: 0;
-}
-
-.header-zoneRed {
-  padding: 32px;
-  color: #FFFFFF;
-  background-color: #D3715C;
-}
-
-.header-zoneWhite {
-  padding: 32px;
-}
-
-.header-zoneBlue {
-  padding: 32px;
-  color: #FFFFFF;
-  background-color: #639CA8;
-}
-
-.skills {
-  margin-bottom: 64px;
-  padding: 32px;
-  background-color: #E0E0E0;
-}
-
-.skills-heading {
-  padding: 32px;
-  text-align: center;
-}
-
-.skill-primary {
-  display: inline;
-  text-transform: uppercase;
-  font-weight: 300;
-}
-
-.skill-secondary {
-  font-weight: 300;
-  display: inline;
-}
-
-.projects-section {
-  padding: 32px;
-}
-
-.projects-heading {
-  margin-bottom: 16px;
-  color: #FFFFFF;
-  background-color: #462255;
-}
-
-.projects-container {
-  padding: 0;
-}
-
-.project {
-  padding: 8px;
-  margin-bottom: 16px;
-  list-style: none;
-  border: 2px solid #212121;
-}
-
-.projects-button {
-  background-color: transparent;
-}
-
-.about {
-  box-sizing: border-box;
-  padding: 16px;
-  background-color: #424242;
 }
 
 .temp-image {
@@ -171,17 +319,10 @@ p {
 .temp-portrait {
   height: 150px;
   width: 150px;
-  margin-bottom: 16px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
   background: linear-gradient(#639CA8, #D3715C);
-}
-
-.footer {
-  height: 200px;
-  width: 100%;
-  background-color: #212121;
 }
 
 /*# sourceMappingURL=style.css.map */
