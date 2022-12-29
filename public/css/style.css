@@ -1,5 +1,5 @@
 .intro-heading-lineTwo::after {
-  border-width: 2px;
+  border-width: 0.125rem;
   border-right-width: 0;
   border-color: #212121;
   border-style: solid;
@@ -32,14 +32,6 @@
   font-weight: 600;
   color: #616161;
   letter-spacing: 0.05rem;
-}
-
-.projects-button {
-  font-size: clamp(1rem, 3.1vw, 1.75rem);
-  color: #424242;
-  text-decoration: underline;
-  font-weight: 300;
-  border: none;
 }
 
 .intro {
@@ -129,8 +121,8 @@
 }
 
 .intro-icons-github {
-  width: 6.4vw;
-  height: 6.4vw;
+  width: clamp(2rem, 9.9vh, 5.75rem);
+  height: clamp(2rem, 9.9vh, 5.75rem);
 }
 
 .skills {
@@ -159,7 +151,7 @@
   position: absolute;
   height: 2.1304347826em;
   width: 100%;
-  border: 2px #212121 solid;
+  border: 0.125rem #212121 solid;
 }
 
 .skills-heading-content {
@@ -200,7 +192,7 @@
   transform: translateY(50%);
   width: 11.4375em;
   height: 1.75em;
-  border-width: 2px;
+  border-width: 0.125rem;
   border-left-width: 0;
   border-style: solid;
   border-color: #212121;
@@ -221,6 +213,9 @@
 }
 
 .projects-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: min(2rem, 3.4vh);
   width: min(80vw, 80rem);
   padding: 0;
   margin: 0 auto;
@@ -228,10 +223,16 @@
 
 .projects-item {
   list-style: none;
-  border: 2px solid #212121;
+  border: 0.125rem solid #212121;
 }
 
 .projects-button {
+  padding: 0.2857142857em;
+  font-size: clamp(1rem, 3.1vw, 1.75rem);
+  color: #424242;
+  text-decoration: underline;
+  font-weight: 300;
+  border: 0.125rem solid #212121;
   background-color: transparent;
 }
 

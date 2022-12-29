@@ -1,0 +1,77 @@
+$text-fontFam-primary: 'Poppins', sans-serif;
+$text-fontFam-secondary: 'Forum', cursive;
+
+$base-font-size: 16;
+$text-fontSize-heading-lvl1: clamp(calc(32 / $base-font-size) * 1rem, 10vw, calc(90 / $base-font-size) * 1rem);
+$text-fontSize-heading-lvl2: clamp(calc(24 / $base-font-size) * 1rem, 7.1vw, calc(64 / $base-font-size) * 1rem);
+$text-fontSize-heading-lvl3: clamp(1rem, 5.1vw, calc(46 / $base-font-size) * 1rem);
+$text-fontSize-heading-lvl4: clamp(1rem, 3.6vw, calc(32 / $base-font-size) * 1rem);
+$text-fontSize-paragraph: clamp(1rem, 2.6vw, calc(24 / $base-font-size) * 1rem);
+$text-fontSize-skill-main: clamp(calc(18 / $base-font-size) * 1rem, 3.6vw, calc(32 / $base-font-size) * 1rem);
+$text-fontSize-skill-secondary: clamp(calc(16 / $base-font-size) * 1rem, 3.1vw, calc(28 / $base-font-size) * 1rem);
+$text-fontSize-toggle: clamp(1rem, 3.1vw, calc(28 / $base-font-size) * 1rem);
+
+$text-fontWeight-primary: 300;
+$text-fontWeight-headings-lvl-3-4: 500;
+$text-fontWeight-links: 600;
+
+$text-letterSpacing-paragraph: 0.05rem;
+
+$text-lineHeight-paragraph: 1.5;
+
+$text-textDecor-control: underline;
+
+%headings-lvl-1-2 {
+  margin: 0;
+  font-family: $text-fontFam-secondary;
+}
+
+%headings-lvl-3-4 {
+  margin: 0;
+  font-weight: $text-fontWeight-headings-lvl-3-4;
+}
+
+%heading-lvl-1 {
+  @extend %headings-lvl-1-2;
+
+  font-size: $text-fontSize-heading-lvl1;
+}
+
+%heading-lvl-2 {
+  @extend %headings-lvl-1-2;
+  font-size: $text-fontSize-heading-lvl2;
+}
+
+%heading-lvl-3 {
+  @extend %headings-lvl-3-4;
+  font-size: $text-fontSize-heading-lvl3;
+}
+
+%heading-lvl-4 {
+  @extend %headings-lvl-3-4;
+  font-size: $text-fontSize-heading-lvl4;
+}
+
+%skill-main {
+  font-size: $text-fontSize-skill-main;
+}
+
+%skill-secondary {
+  font-size: $text-fontSize-skill-secondary;
+}
+
+%paragraph {
+  letter-spacing: $text-letterSpacing-paragraph;
+}
+
+%link {
+  display: block;
+  font-size: $text-fontSize-paragraph;
+  font-weight: $text-fontWeight-links;
+  color: $color-main-dark-secondary;
+  letter-spacing: $text-letterSpacing-paragraph;
+}
+
+%about-text {
+  color: $color-main-light-primary;
+}

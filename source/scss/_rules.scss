@@ -8,7 +8,12 @@ $site-frame-margin: 7vw;
 $width-siteFrame: min(80vw, 80rem);
 
 $border-small: 1px;
-$border-big: 2px;
+$border-big: calc(2 / 16 * 1rem);
+$border: $border-big solid $color-main-dark-darkest;
+
+$gap-vert-small: min(1rem, 1.7vh);
+$gap-vert-medium: min(2rem, 3.4vh);
+$gap-vert-big: min(4rem, 6.9vh);
 
 %site-frame {
   width: $width-siteFrame;
@@ -19,6 +24,6 @@ $border-big: 2px;
 %intro-decoration-border {
   border-width: $border-big;
   border-right-width: 0;
-  border-color: $color-darkest;
+  border-color: $color-main-dark-darkest;
   border-style: solid;
 }

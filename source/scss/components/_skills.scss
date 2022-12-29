@@ -1,7 +1,7 @@
 .skills {
   position: relative;
 
-  background-color: $color-secondary-medium;
+  background-color: $color-main-light-medium;
 }
 
 .skills-container {
@@ -21,7 +21,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  font-size: $heading-lvl-3-font-size;
+  font-size: $text-fontSize-heading-lvl3;
 
   &::after {
     content: '';
@@ -31,7 +31,7 @@
     height: calc(98 / 46 * 1em);
     width: 100%;
 
-    border: $border-big $color-darkest solid;
+    border: $border-big $color-main-dark-darkest solid;
   }
 }
 
@@ -39,7 +39,7 @@
   margin: 0;
 
   font-size: inherit;
-  font-weight: $font-weight-headings-lvl-3-4;
+  font-weight: $text-fontWeight-headings-lvl-3-4;
   text-align: center;
 }
 

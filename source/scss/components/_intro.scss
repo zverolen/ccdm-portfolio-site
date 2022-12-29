@@ -7,7 +7,7 @@
 .intro-lineOne {
   position: relative;
 
-  font-size: $heading-lvl-1-font-size;
+  font-size: $text-fontSize-heading-lvl1;
 
   &::after {
     content: '';
@@ -20,18 +20,18 @@
     height: 100%;
     margin-right: auto;
 
-    background-color: $color-red;
+    background-color: $color-contrast-red;
   }
 }
 
 .intro-lineTwo {
-  font-size: $heading-lvl-2-font-size;
+  font-size: $text-fontSize-heading-lvl2;
 }
 
 .intro-lineThree{
   position: relative;
  
-  font-size: $heading-lvl-2-font-size;
+  font-size: $text-fontSize-heading-lvl2;
 
   &::after {
     content: '';
@@ -45,7 +45,7 @@
     height: 100%;
     margin-left: auto;
   
-    background-color: $color-blue;
+    background-color: $color-contrast-blue;
   }
 }
  
@@ -54,8 +54,8 @@
   margin: 0 auto;
   padding-top: calc(130 / 90) * 1em;
 
-  font-family: $font-secondary;
-  color: $color-lightest;
+  font-family: $text-fontFam-secondary;
+  color: $color-main-light-lightest;
 }
 
 .intro-heading-lineTwo {
@@ -64,8 +64,8 @@
   width: $width-siteFrame;
   margin: 0 auto;
 
-  font-family: $font-secondary;
-  color: $color-primary-dark;
+  font-family: $text-fontFam-secondary;
+  color: $color-main-dark-primary;
 
   &::after {
     content: '';
@@ -90,8 +90,8 @@
   margin-bottom: 0;
   margin-left: 14vw;
 
-  font-family: $font-secondary;
-  color: $color-lightest;
+  font-family: $text-fontFam-secondary;
+  color: $color-main-light-lightest;
 }
 
 .intro-icons {
@@ -106,6 +106,12 @@
 }
 
 .intro-icons-github {
-  width: 6.4vw;
-  height: 6.4vw;
+  // width: 6.4vw;
+  // height: 6.4vw;
+  // width: 9.9vh;
+  // height: 9.9vh;
+  // width: max(2rem, 9.9vh);
+  // height: max(2rem, 9.9vh);
+  width: clamp(2rem, 9.9vh, 92 / 16 * 1rem);
+  height: clamp(2rem, 9.9vh, 92 / 16 * 1rem);
 }

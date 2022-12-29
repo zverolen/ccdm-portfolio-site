@@ -1,16 +1,16 @@
 .projects-section p {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: $paragraph-font-size;
-  font-weight: $font-weight-primary;
+  font-size: $text-fontSize-paragraph;
+  font-weight: $text-fontWeight-primary;
 }
 
 .projects-heading-container {
   position: relative;
 
-  font-size: $heading-lvl-2-font-size;
+  font-size: $text-fontSize-heading-lvl2;
 
-  background-color: $color-purple;
+  background-color: $color-contrast-purple;
 
   &::after {
     content: '';
@@ -26,7 +26,7 @@
     border-width: $border-big;
     border-left-width: 0;
     border-style: solid;
-    border-color: $color-darkest;
+    border-color: $color-main-dark-darkest;
   }
 }
 
@@ -35,9 +35,9 @@
   margin: 0 auto;
 
   font-size: inherit;
-  font-family: $font-secondary;
-  font-weight: $font-weight-primary;
-  color: $color-lightest;
+  font-family: $text-fontFam-secondary;
+  font-weight: $text-fontWeight-primary;
+  color: $color-main-light-lightest;
 }
 
 .projects-note {
@@ -46,6 +46,10 @@
 }
 
 .projects-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: $gap-vert-medium;
+
   width: $width-siteFrame;
   padding: 0;
   margin: 0 auto;
@@ -54,7 +58,7 @@
 .projects-item {
 
   list-style: none;
-  border: $border-big solid $color-darkest;
+  border: $border-big solid $color-main-dark-darkest;
 }
 
 .project-heading {
@@ -70,7 +74,13 @@
 }
 
 .projects-button {
-  @extend %button;
+  padding: calc(8 / 28 * 1em);
+  font-size: $text-fontSize-toggle;
+  color: $color-main-dark-primary;
+  text-decoration: underline;
+  font-weight: $text-fontWeight-primary;
+
+  border: $border;
 
   background-color: transparent;
 }
