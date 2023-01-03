@@ -26,14 +26,6 @@
   font-size: clamp(1rem, 3.1vw, 1.75rem);
 }
 
-.projects-link {
-  display: block;
-  font-size: clamp(1rem, 2.6vw, 1.5rem);
-  font-weight: 600;
-  color: #616161;
-  letter-spacing: 0.05rem;
-}
-
 .intro {
   width: 100%;
   overflow: hidden;
@@ -120,9 +112,16 @@
   display: flex;
 }
 
-.intro-icons-github {
+.intro-icons-item {
   width: clamp(2rem, 9.9vh, 5.75rem);
   height: clamp(2rem, 9.9vh, 5.75rem);
+  fill: none;
+  stroke: #212121;
+  stroke-width: 0.125rem;
+  cursor: pointer;
+}
+.intro-icons-item:hover {
+  fill: #212121;
 }
 
 .skills {
@@ -226,14 +225,31 @@
   border: 0.125rem solid #212121;
 }
 
+.projects-link {
+  display: block;
+  font-size: clamp(1rem, 2.6vw, 1.5rem);
+  font-weight: 600;
+  color: #616161;
+  letter-spacing: 0.05rem;
+}
+.projects-link:hover {
+  color: #462255;
+}
+
 .projects-button {
   padding: 0.2857142857em;
+  font-family: "Poppins", sans-serif;
   font-size: clamp(1rem, 3.1vw, 1.75rem);
   color: #424242;
   text-decoration: underline;
   font-weight: 300;
   border: 0.125rem solid #212121;
-  background-color: transparent;
+  background-color: #FAFAFA;
+}
+.projects-button:hover {
+  color: #FAFAFA;
+  background-color: #462255;
+  border-color: #462255;
 }
 
 .about p {
@@ -270,9 +286,16 @@
   display: flex;
 }
 
-.about-icons-github {
-  width: 6.4vw;
-  height: 6.4vw;
+.about-icons-item {
+  width: clamp(2rem, 9.9vh, 5.75rem);
+  height: clamp(2rem, 9.9vh, 5.75rem);
+  fill: none;
+  stroke: #FAFAFA;
+  stroke-width: 0.125rem;
+  cursor: pointer;
+}
+.about-icons-item:hover {
+  fill: #FAFAFA;
 }
 
 .footer {

@@ -70,11 +70,20 @@
 }
 
 .projects-link {
-  @extend %link;
+  display: block;
+  font-size: $text-fontSize-paragraph;
+  font-weight: $text-fontWeight-links;
+  color: $color-main-dark-secondary;
+  letter-spacing: $text-letterSpacing-paragraph;
+
+  &:hover {
+    color: $color-contrast-purple;
+  }
 }
 
 .projects-button {
   padding: calc(8 / 28 * 1em);
+  font-family: $text-fontFam-primary;
   font-size: $text-fontSize-toggle;
   color: $color-main-dark-primary;
   text-decoration: underline;
@@ -82,5 +91,11 @@
 
   border: $border;
 
-  background-color: transparent;
+  background-color: $color-main-light-primary;
+
+  &:hover {
+    color: $color-main-light-primary;
+    background-color: $color-contrast-purple;
+    border-color: $color-contrast-purple;
+  }
 }

@@ -64,14 +64,6 @@ $text-textDecor-control: underline;
   letter-spacing: $text-letterSpacing-paragraph;
 }
 
-%link {
-  display: block;
-  font-size: $text-fontSize-paragraph;
-  font-weight: $text-fontWeight-links;
-  color: $color-main-dark-secondary;
-  letter-spacing: $text-letterSpacing-paragraph;
-}
-
 %about-text {
   color: $color-main-light-primary;
 }

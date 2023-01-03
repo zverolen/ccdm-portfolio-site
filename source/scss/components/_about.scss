@@ -33,7 +33,17 @@
   display: flex;
 }
 
-.about-icons-github {
-  width: 6.4vw;
-  height: 6.4vw;
+.about-icons-item {
+  width: clamp(2rem, 9.9vh, 92 / 16 * 1rem);
+  height: clamp(2rem, 9.9vh, 92 / 16 * 1rem);
+
+  fill: none;
+  stroke: $color-main-light-primary;
+  stroke-width: calc(2 / 16 * 1rem);
+
+  cursor: pointer;
+
+  &:hover {
+    fill: $color-main-light-primary;
+  }
 }
