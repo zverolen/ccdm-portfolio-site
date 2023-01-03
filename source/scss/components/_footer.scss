@@ -13,7 +13,6 @@
   display: flex;
 }
 
-.footer-icons-github {
-  width: 6.4vw;
-  height: 6.4vw;
+.footer-icons-item {
+ @include icon($color-main-light-primary);
 }

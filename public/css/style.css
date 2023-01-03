@@ -313,9 +313,16 @@
   display: flex;
 }
 
-.footer-icons-github {
-  width: 6.4vw;
-  height: 6.4vw;
+.footer-icons-item {
+  width: clamp(2rem, 9.9vh, 5.75rem);
+  height: clamp(2rem, 9.9vh, 5.75rem);
+  fill: none;
+  stroke: #FAFAFA;
+  stroke-width: 0.125rem;
+  cursor: pointer;
+}
+.footer-icons-item:hover {
+  fill: #FAFAFA;
 }
 
 .visually-hidden {
