@@ -22,6 +22,8 @@ $text-lineHeight-skill: 1.8;
 
 $text-textDecor-control: underline;
 
+$transform-skill: uppercase;
+
 %headings-lvl-1-2 {
   margin: 0;
   font-family: $text-fontFam-secondary;
@@ -53,14 +55,19 @@ $text-textDecor-control: underline;
   font-size: $text-fontSize-heading-lvl4;
 }
 
-%skill-main {
-  font-size: $text-fontSize-skill-main;
+@mixin skill($font-size) {
+  font-size: $font-size;
   line-height: $text-lineHeight-skill;
+  text-transform: $transform-skill;
+  font-weight: $text-fontWeight-primary;
+}
+
+%skill-main {
+  @include skill($text-fontSize-skill-main);
 }
 
 %skill-secondary {
-  font-size: $text-fontSize-skill-secondary;
-  font-weight: $text-fontWeight-primary;
+  @include skill($text-fontSize-skill-secondary);
 }
 
 %paragraph {
