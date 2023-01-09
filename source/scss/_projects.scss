@@ -1,3 +1,5 @@
+@use 'modules/layout';
+
 .projects-section p {
   margin-top: 0;
   margin-bottom: 0;
@@ -5,7 +7,11 @@
   font-weight: $text-fontWeight-primary;
 }
 
-.projects-heading-container {
+.projects-section {
+  @include layout.section;
+}
+
+.projects-section-heading-container {
   position: relative;
 
   font-size: $text-fontSize-heading-lvl2;
@@ -30,9 +36,11 @@
   }
 }
 
-.projects-heading-content {
-  width: $width-siteFrame;
-  margin: 0 auto;
+.projects-section-heading {
+  @include layout.content;
+
+  margin-top: 0;
+  margin-bottom: 0;
 
   font-size: inherit;
   font-family: $text-fontFam-secondary;
@@ -40,36 +48,56 @@
   color: $color-main-light-lightest;
 }
 
-.projects-note {
-  width: $width-siteFrame;
-  margin: 0 auto;
+.projects-section-content {
+  @include layout.group;
+}
+
+.projects-section-note {
+  @include layout.content;
 }
 
 .projects-container {
-  display: flex;
-  flex-direction: column;
-  row-gap: $gap-vert-medium;
+  @include layout.content;
+  @include layout.group;
 
-  width: $width-siteFrame;
   padding: 0;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .projects-item {
+  @include layout.group;
+  @include layout.project;
 
   list-style: none;
   border: $border-big solid $color-main-dark-darkest;
 }
 
-.project-heading {
+.projects-item-heading {
   @extend %heading-lvl-3;
 }
 
-.project-features-heading {
+.projects-item-content {
+  @include layout.subgroup;
+}
+
+.projects-features-heading {
   @extend %heading-lvl-4;
 }
 
-.projects-link {
+.projects-features-container {
+  @include layout.subgroup;
+}
+
+.projects-features-item {
+  @include layout.horizontal;
+}
+
+.projects-links-container {
+  @include layout.subgroup;
+}
+
+.projects-links-item {
   display: block;
   font-size: $text-fontSize-paragraph;
   font-weight: $text-fontWeight-links;

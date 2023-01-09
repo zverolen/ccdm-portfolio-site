@@ -1,5 +1,8 @@
+@use 'modules/layout';
+
 .intro {
-  width: 100%;
+  @include layout.site;
+  @include layout.intro;
 
   overflow: hidden;
 }
@@ -24,8 +27,46 @@
   }
 }
 
+.intro-lineOne-heading {
+  @include layout.content;
+
+  padding-top: calc(130 / 90) * 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-family: $text-fontFam-secondary;
+  color: $color-main-light-lightest;
+}
+
 .intro-lineTwo {
   font-size: $text-fontSize-heading-lvl2;
+}
+ 
+.intro-lineTwo-heading {
+  @include layout.content;
+
+  position: relative;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-family: $text-fontFam-secondary;
+  color: $color-main-dark-primary;
+
+  &::after {
+    content: '';
+
+    @extend %intro-decoration-border;
+
+    position: absolute;
+    left: calc(-14 / 64) * 1em;
+    top: calc(-10 / 64) * 1em;
+
+    display: block;
+  
+    width: 200%;
+    height: calc(170 / 64 * 1em);
+  }
 }
 
 .intro-lineThree{
@@ -48,42 +89,8 @@
     background-color: $color-contrast-blue;
   }
 }
- 
-.intro-heading-lineOne {
-  width: $width-siteFrame;
-  margin: 0 auto;
-  padding-top: calc(130 / 90) * 1em;
 
-  font-family: $text-fontFam-secondary;
-  color: $color-main-light-lightest;
-}
-
-.intro-heading-lineTwo {
-  position: relative;
-
-  width: $width-siteFrame;
-  margin: 0 auto;
-
-  font-family: $text-fontFam-secondary;
-  color: $color-main-dark-primary;
-
-  &::after {
-    content: '';
-
-    @extend %intro-decoration-border;
-
-    position: absolute;
-    left: calc(-14 / 64) * 1em;
-    top: calc(-10 / 64) * 1em;
-
-    display: block;
-  
-    width: 200%;
-    height: calc(170 / 64 * 1em);
-  }
-}
-
-.intro-heading-lineThree {
+.intro-lineThree-heading {
   padding-bottom: calc(70 / 64) * 1em;
   padding-left: calc(8 / 64) * 1em;
   margin-top: 0;
@@ -95,14 +102,13 @@
 }
 
 .intro-icons {
-  width: $width-siteFrame;
-  margin-left: auto;
-  margin-right: auto;
+  @include layout.content;
+
   margin-top: calc(-12 / 16 * 1rem);
 }
 
 .intro-icons-container {
-  display: flex;
+  @include layout.horizontal;
 }
 
 .intro-icons-item {

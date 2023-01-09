@@ -2,12 +2,12 @@ $text-fontFam-primary: 'Poppins', sans-serif;
 $text-fontFam-secondary: 'Forum', cursive;
 
 $base-font-size: 16;
-$text-fontSize-heading-lvl1: clamp(calc(32 / $base-font-size) * 1rem, 10vw, calc(90 / $base-font-size) * 1rem);
+$text-fontSize-heading-lvl1: clamp(calc(32 / $base-font-size) * 1rem, calc(90 * 100 / 900 * 1vw), calc(90 / $base-font-size) * 1rem);
 $text-fontSize-heading-lvl2: clamp(calc(24 / $base-font-size) * 1rem, 7.1vw, calc(64 / $base-font-size) * 1rem);
 $text-fontSize-heading-lvl3: clamp(1rem, 5.1vw, calc(46 / $base-font-size) * 1rem);
 $text-fontSize-heading-lvl4: clamp(1rem, 3.6vw, calc(32 / $base-font-size) * 1rem);
 $text-fontSize-paragraph: clamp(1rem, 2.6vw, calc(24 / $base-font-size) * 1rem);
-$text-fontSize-skill-main: clamp(calc(18 / $base-font-size) * 1rem, 3.6vw, calc(32 / $base-font-size) * 1rem);
+$text-fontSize-skill-main: clamp(calc(18 / $base-font-size) * 1rem, calc(40 * 100 / 900 * 1vw), calc(40 / $base-font-size) * 1rem);
 $text-fontSize-skill-secondary: clamp(calc(16 / $base-font-size) * 1rem, 3.1vw, calc(28 / $base-font-size) * 1rem);
 $text-fontSize-toggle: clamp(1rem, 3.1vw, calc(28 / $base-font-size) * 1rem);
 
@@ -18,6 +18,7 @@ $text-fontWeight-links: 600;
 $text-letterSpacing-paragraph: 0.05rem;
 
 $text-lineHeight-paragraph: 1.5;
+$text-lineHeight-skill: 1.8;
 
 $text-textDecor-control: underline;
 
@@ -54,10 +55,12 @@ $text-textDecor-control: underline;
 
 %skill-main {
   font-size: $text-fontSize-skill-main;
+  line-height: $text-lineHeight-skill;
 }
 
 %skill-secondary {
   font-size: $text-fontSize-skill-secondary;
+  font-weight: $text-fontWeight-primary;
 }
 
 %paragraph {

@@ -1,0 +1,58 @@
+@use 'sizes';
+@use 'gap';
+
+@mixin site {
+  width: 100%;
+}
+
+@mixin content {
+  width: sizes.$contentWidth;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin section {
+  display: flex;
+  flex-direction: column;
+  row-gap: gap.$section;
+
+  padding-top: gap.$section;
+  padding-bottom: gap.$section;
+}
+
+@mixin subgroup {
+  display: flex;
+  flex-direction: column;
+  row-gap: gap.$subgroup;
+}
+
+@mixin group {
+  display: flex;
+  flex-direction: column;
+  row-gap: gap.$group;
+}
+
+@mixin horizontal {
+  display: flex;
+  column-gap: gap.$subgroup;
+}
+
+@mixin intro {
+  padding-bottom: gap.$section;
+}
+
+@mixin skills-section {
+  @include section;
+  padding-bottom: gap.$section;
+}
+
+@mixin skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 32px;
+}
+
+@mixin project {
+  padding: gap.$group;
+}

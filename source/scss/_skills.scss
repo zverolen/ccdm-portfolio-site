@@ -1,13 +1,18 @@
-.skills {
+@use 'modules/layout';
+
+.skills-section {
+  @include layout.skills-section;
+
   position: relative;
+
+  padding-top: 0;
 
   background-color: $color-main-light-medium;
 }
 
-.skills-container {
-  width: $width-siteFrame;
-  margin-left: auto;
-  margin-right: auto;
+.skills-section-content {
+  @include layout.content;
+  @include layout.group;
 }
 
 .skills-heading-container { 
@@ -43,17 +48,25 @@
   text-align: center;
 }
 
-.skill-primary {
+.skills-primary-container {
+  @include layout.skills-container;
+}
+
+.skills-primary-item {
   @extend %skill-main;
-  display: inline;
+
+  margin: 0;
 
   text-transform: uppercase;
   font-weight: 300;
 }
 
-.skill-secondary {
+.skills-secondary-container {
+  @include layout.skills-container;
+}
+
+.skills-secondary-item {
   @extend %skill-secondary;
 
-  font-weight: 300;
-  display: inline;
+  margin: 0;
 }

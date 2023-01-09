@@ -1,18 +1,30 @@
-.about p {
+@use './modules/layout';
+
+.about-section p {
   margin: 0;
   font-size: $text-fontSize-paragraph;
   font-weight: 300;
   color: $color-main-light-primary;
 }
 
-.about {
+.about-section {
+  @include layout.site;
+  @include layout.section;
+
   background-color: $color-main-dark-primary;
 }
 
-.about-container {
-  width: $width-siteFrame;
-  margin-left: auto;
-  margin-right: auto;
+.about-content {
+  @include layout.content;
+  @include layout.section;
+}
+
+.about-info {
+  @include layout.group;
+}
+
+.about-contact {
+  @include layout.subgroup;
 }
 
 .about-subheading {
@@ -21,12 +33,6 @@
   font-size: $text-fontSize-heading-lvl4;
   font-weight: $text-fontWeight-headings-lvl-3-4;
   color: $color-main-light-primary;
-}
-
-.about-icons {
-  width: $width-siteFrame;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .about-icons-container {

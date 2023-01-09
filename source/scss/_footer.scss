@@ -1,12 +1,15 @@
+
+@use 'modules/layout';
+
 .footer {
-  width: 100%;
+  @include layout.site;
+  @include layout.section;
+
   background-color: $color-main-dark-darkest;
 }
 
 .footer-icons {
-  width: $width-siteFrame;
-  margin-left: auto;
-  margin-right: auto;
+  @include layout.content;
 }
 
 .footer-icons-container {
