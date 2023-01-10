@@ -291,6 +291,10 @@
   row-gap: min(1rem, 1.7vh);
 }
 
+.projects-image-item {
+  width: 100%;
+}
+
 .projects-features-container {
   display: flex;
   flex-direction: column;
@@ -361,6 +365,17 @@
   row-gap: min(4rem, 6.9vh);
   padding-top: min(4rem, 6.9vh);
   padding-bottom: min(4rem, 6.9vh);
+}
+
+.about-image-container {
+  height: 150px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-image-item {
+  width: 100%;
 }
 
 .about-info {
@@ -444,21 +459,6 @@ body {
   font-family: "Poppins", sans-serif;
   color: #424242;
   background-color: #FAFAFA;
-}
-
-.temp-image {
-  width: 100%;
-  height: 400px;
-  background: linear-gradient(#639CA8, #D3715C);
-}
-
-.temp-portrait {
-  height: 150px;
-  width: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  background: linear-gradient(#639CA8, #D3715C);
 }
 
 /*# sourceMappingURL=style.css.map */

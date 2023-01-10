@@ -81,6 +81,10 @@
   @include layout.subgroup;
 }
 
+.projects-image-item {
+  width: 100%;
+}
+
 .projects-features-heading {
   @extend %heading-lvl-4;
 }

@@ -26,19 +26,3 @@ body {
 
   background-color: $color-main-light-primary;
 }
-
-//Components
-.temp-image {
-  width: 100%;
-  height: 400px;
-  background: linear-gradient($color-contrast-blue, $color-contrast-red);
-}
-
-.temp-portrait {
-  height: 150px;
-  width: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  background: linear-gradient($color-contrast-blue, $color-contrast-red);
-}
