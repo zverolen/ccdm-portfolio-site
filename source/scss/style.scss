@@ -1,11 +1,11 @@
 @import 'color';
 @import 'rules';
 @import 'text';
-@import 'intro';
-@import 'skills';
-@import 'projects';
-@import 'about';
-@import 'footer';
+@import '1intro';
+@import '2skills';
+@import '3projects';
+@import '4about';
+@import '5footer';
 
 //Helpers
 .visually-hidden {

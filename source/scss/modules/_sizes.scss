@@ -1,1 +1,3 @@
 $contentWidth: min(84.7vw, 80rem);
+$portraitDimention: clamp(100 / 16 * 1rem, 160 * 100 / 800 * 1vw, 200 / 16 * 1rem);
+$bulletDimention: max(calc(12 / 16 * 1rem), calc(20 * 100 / 1512 * 1vw));

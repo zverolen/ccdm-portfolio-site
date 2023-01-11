@@ -26,7 +26,7 @@
     bottom: 50%;
     transform: translateY(50%);
 
-    width: calc(732 / 64 * 1em);
+    width: calc(732 * 100 / 1512 * 1vw);
     height: calc(112 / 64 * 1em);
   
     border-width: $border-big;
@@ -102,6 +102,12 @@
 
 .projects-features-item {
   @include layout.horizontal;
+  align-items: baseline;
+}
+
+.projects-features-bullet {
+  @include layout.bullet;
+  flex-shrink: 0;
 }
 
 .projects-links-container {

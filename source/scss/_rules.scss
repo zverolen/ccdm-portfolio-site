@@ -6,8 +6,7 @@ $width-blueStripe: 86vw;
 $site-frame-margin: min(1.7vw, calc(32 / 16) * 1em);
 $site-frame-margin: 7vw;
 
-$border-small: 1px;
-$border-big: calc(2 / 16 * 1rem);
+$border-big: min(calc(1 * 100 / 280 * 1vw), calc(2 / 16 * 1rem));
 $border: $border-big solid $color-main-dark-darkest;
 
 // Logic
@@ -20,12 +19,15 @@ $border: $border-big solid $color-main-dark-darkest;
 }
 
 @mixin icon($color) {
-  width: clamp(2rem, 9.9vh, 92 / 16 * 1rem);
-  height: clamp(2rem, 9.9vh, 92 / 16 * 1rem);
+  position: relative;
+  bottom: min(calc(12 * 100 / 900 * 1vw), 12 / 16 * 1rem);
+
+  width: clamp(50 / 16 * 1rem, 92 * 100 / 900 * 1vw, 94 / 16 * 1rem);
+  height: clamp(50 / 16 * 1rem, 92 * 100 / 900 * 1vw, 94 / 16 * 1rem);
 
   fill: none;
   stroke: $color;
-  stroke-width: calc(2 / 16 * 1rem);
+  stroke-width: $border-big;
 
   cursor: pointer;
 

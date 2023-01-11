@@ -13,7 +13,7 @@
 }
 
 .footer-icons-container {
-  display: flex;
+  @include layout.horizontal;
 }
 
 .footer-icons-item {
