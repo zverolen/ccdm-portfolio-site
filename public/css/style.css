@@ -278,14 +278,27 @@
 
 .projects-item {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   row-gap: min(2rem, 3.4vh);
   padding: min(2rem, 3.4vh);
   list-style: none;
   border: 0.125rem solid #212121;
 }
 
+.projects-item-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: min(2rem, 3.4vh);
+}
+
 .projects-item-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: min(2rem, 3.4vh);
+}
+
+.projects-item-description {
   display: flex;
   flex-direction: column;
   row-gap: min(1rem, 1.7vh);

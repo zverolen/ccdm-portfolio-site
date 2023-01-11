@@ -54,5 +54,11 @@
 }
 
 @mixin project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: gap.$group;
+
   padding: gap.$group;
 }
+

@@ -66,11 +66,14 @@
 }
 
 .projects-item {
-  @include layout.group;
   @include layout.project;
 
   list-style: none;
   border: $border-big solid $color-main-dark-darkest;
+}
+
+.projects-item-container {
+  @include layout.group;
 }
 
 .projects-item-heading {
@@ -78,6 +81,10 @@
 }
 
 .projects-item-content {
+  @include layout.group;
+}
+
+.projects-item-description {
   @include layout.subgroup;
 }
 
